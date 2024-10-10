@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maki Resort</title>
+
+    <meta name="author" content="Hanson Tram" />
+    <meta
+      name="description"
+      content="Maki Resort is your one stop destination for all things luxury and relaxation."
+    />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="https://use.typekit.net/ssy8ycc.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Maki Resort</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="nav-btn">Home</a></li>
+          <li><a href="#" class="nav-btn">Accommodations</a></li>
+          <li><a href="/contact.html" class="nav-btn active">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div>
+      <img
+        src="images/swiss-valley.jpg"
+        alt="Beautiful view of Swiss valley with mountains and greenery"
+        width="1440"
+        height="560"
+        class="hero-img"
+      />
+    </div>
+
+    <main class="contact-main">
+      <div class="contact-left-container">
+        <h2>Contact Us</h2>
+        <p class="contact-p">
+          Please reach out to us with any questions or concerns. We are happy to
+          help you plan your dream vacation with us!
+        </p>
+
+        <div class="image-container">
+          <img
+            src="images/swiss-peak.jpg"
+            alt="Stunning view of a Swiss mountain peak with snow"
+            class="contact-image"
+            width="350"
+            height="455"
+          />
+        </div>
+      </div>
+
+      <form id="contact-form" method="POST">
+        <span>Required fields marked with a *</span>
+        <!-- Full Name -->
+        <label for="full-name">Full Name *</label>
+        <input type="text" id="full-name" name="full-name" required />
+
+        <!-- Email Address -->
+        <label for="email">Email Address *</label>
+        <input type="email" id="email" name="email" required />
+
+        <!-- Phone Number -->
+        <label for="phone">Phone Number *</label>
+        <input type="tel" id="phone" name="phone" required />
+
+        <!-- Preferred Contact Method -->
+        <fieldset>
+          <legend>Preferred Contact Method *</legend>
+          <div>
+            <input
+              type="radio"
+              id="contact-email"
+              name="contact-method"
+              value="email"
+              required
+            />
+            <label for="contact-email">Email</label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="contact-phone"
+              name="contact-method"
+              value="phone"
+              required
+            />
+            <label for="contact-phone">Phone</label>
+          </div>
+        </fieldset>
+
+        <!-- Comments -->
+        <label for="comments">Comments *</label>
+        <textarea id="comments" name="comments" rows="4" required></textarea>
+
+        <!-- Submit Button -->
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </main>
+
+    <footer>
+      <p>Copyright &copy; 2024 - Maki Resort</p>
+      <p>This site is for educational purposes only</p>
+    </footer>
+  </body>
+</html>
